@@ -1,0 +1,339 @@
+/*no van a ser los colores finales */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header {
+    background-color: black;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    align-content: center;
+    align-items: center;
+}
+body {
+    background-color: black;
+    color: rgb(219, 218, 218);
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+
+}
+h1 {
+    color: #777777;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    padding: 25px;
+    margin: 10px;
+}
+h2, h3 {
+    color: #cc0000;
+    font-family: 'Aldrich', sans-serif;
+    text-shadow: 1px 1px 1px whitesmoke;
+    text-transform: capitalize;
+    padding: 15px;
+}
+h3{
+    grid-area: titulo;
+}
+p{
+    padding: 3px 20px;
+    grid-area: parrafo;
+}
+img{
+    grid-area: imagen;
+}
+li{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+iframe{
+    padding: auto;
+}
+table {
+    text-align: center;
+}
+th {
+    color: #0000b3;
+}
+a {
+    text-decoration: none;
+    color: #999192;
+    justify-content: space-evenly;
+}
+a:hover{
+    color: whitesmoke;
+}
+/*estilos del footer*/
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+footer ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer img{
+    width: 50%;
+    height: 50%;
+}
+/*estilos de contactos*/
+fieldset {
+    max-width: 90%;
+    align-content: center;
+    padding: auto 30px;
+    margin: auto;
+}
+
+/*estilos de artistas*/
+#artistasImg {
+    align-items: center;
+    justify-content: center;
+}
+#artistasImg nav{
+    align-content: center;
+}
+#artistasImg ul {
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#artistasImg li:hover {
+    transform: scale(1.4, 1.4);
+}
+
+#nosotros p {
+    margin: 20px;
+}
+/*estilo del menu */
+
+.menuEventos, .menuMusica {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    height: 50vh;
+    margin: auto;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+}
+.menuMusica ul, .menuEventos ul{
+    display: flex;
+}
+.menuEventos li, .menuMusica li {
+    width: 200px;
+    height: 100px;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 75px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-family: 'Aldrich', sans-serif;
+    background-color: #333334;
+    text-decoration: overline;
+    border: solid 2px #999192;
+    font-weight: bold;
+    align-content: center;
+    box-sizing: initial;
+}
+.menuEventos li:hover{
+    animation-name: eventos;
+    animation: eventos 5s ease-in 0s infinite;
+    text-shadow: 0.2px 0.2px 0.2px whitesmoke;
+}
+@keyframes eventos{
+    0%{background-image: url(../img/1.jpg);
+        background-position: center center;}
+    20%{background-image: url(../img/2.jpg);
+        background-position: center center;}
+    40%{background-image: url(../img/3.jpg);
+        background-position: center center;}
+    60%{background-image: url(../img/4.jpg);
+        background-position: center center;}
+    80%{background-image: url(../img/5.jpg);
+        background-position: center center;}
+    100%{background-image: url(../img/6.jpg);
+        background-position: center center;}
+}
+#tracks {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+#sets {
+
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+#proximosEventos {
+    color: #999192;
+    background-color: #333334;
+    border: solid 2px #999192;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+#ultimosEventos {
+    color: #333334;
+    background-color: #999192;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+    border: solid 2px #333334;
+}
+#contactoMain{
+    text-align: left;
+}
+/*estilos del index*/
+#indexMain, #contactoMain {
+    background-image: url(../img/publico.jpg);
+    height: 90vh;
+    width: 100%;
+    background-position: center center;
+    align-content: center;
+    margin: auto;
+}
+#indexMain ul{
+    max-width: 800px;
+    display: flex;
+    font-size: 0;
+    margin: auto;
+    opacity: 80%;
+    list-style-type: none;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+}
+#indexMain li{
+    width: 250px;
+    height: 100px;
+    padding: 50px;
+    justify-content: space-evenly;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Aldrich', sans-serif;
+    background-image: linear-gradient(#333334, black) ;
+    text-decoration: overline;
+    border: solid 2px #999192;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: initial;
+}
+
+#indexMain ul li ul{
+    position: absolute;
+    display: none;
+    opacity: 100%;
+}
+#indexMain ul li ul li{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    padding: 50px;
+    margin: 3px;
+    align-content: center;
+    font-size: 16px;
+}
+#indexMain ul li:hover ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*smartphone*/
+@media (max-width: 480px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+    
+    #indexMain nav{
+        margin: 10px 0px;
+    }
+    #indexMain li{
+        width: 250px;
+        height: 30px;
+        margin: 5px;
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+    #indexMain ul li ul{
+        width: 300px;
+    }
+    #indexMain ul li:hover ul{
+        display: flex;
+    }
+    #indexMain ul li ul li{
+        width: 100px;
+        height: 50px;
+        padding: 20px;
+        margin: 3px;
+    }
+    /*estilos de footer*/
+    footer ul{
+        max-height: 5vh;
+    }
+    footer img{
+        height: 50%;
+        width: 50%;
+    }
+    /* estilos de pagina de artistas*/
+    .artistas{
+        text-align: center;
+        align-content: center;
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "parrafo"
+        ;
+        text-size-adjust: auto;
+    }
+    .artistas img{
+        display: none;
+    }
+    
+    .menu{
+        font-size: 8px;
+    }
+    #artistasImg ul{
+        padding: 0px;
+    }
+    #artistasImg li{
+        width: 150px;
+    }
+    
+    #artistasImg img{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1024px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #indexMain li{
+        width: 25vh;
+        height: 30vh;
+        margin: 5px;
+        padding: 20px 20px;
+        font-size: 16px;
+        align-content: center;
+    }
+}
